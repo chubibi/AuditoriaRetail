@@ -3,7 +3,7 @@ package com.example.auditoriaretail
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.example.auditoriaretail.Home.Presentation.ActHome
+import com.example.auditoriaretail.Login.presentation.ui.MainLogin
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
@@ -16,8 +16,8 @@ class MainActivity : AppCompatActivity() {
 //Codigo para quitar la barra, duracion de la pantalla y el intento del cambio de pantalla
         supportActionBar?.hide()
         CoroutineScope(Dispatchers.Main).launch {
-            delay(6000L)
-            startActivity(Intent(this@MainActivity, ActHome::class.java))
+            delay(2500L)
+            startActivity(Intent(this@MainActivity, MainLogin::class.java))
             finish()
         }
     }
