@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_host_login"
+    app:startDestination="@id/frgMainLogin">
+    <fragment
+        android:id="@+id/frgMainLogin"
+        android:name="com.example.auditoriaretail.Login.presentation.ui.FrgMainLogin"
+        android:label="frg_main_login"
+        tools:layout="@layout/frg_main_login" >
+        <action
+            android:id="@+id/to_frg_register"
+            app:destination="@id/frg_register" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/frg_register"
+        android:name="com.example.auditoriaretail.Register.presentation.ui.Frg_register"
+        android:label="frg_register"
+        tools:layout="@layout/frg_register" >
+        <action
+            android:id="@+id/to_frgMainLogin"
+            app:popUpTo="@id/frgMainLogin"
+            app:popUpToInclusive="true"
+            app:destination="@id/frgMainLogin" />
+    </fragment>
+</navigation>

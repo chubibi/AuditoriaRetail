@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "889698122242",
+    "project_id": "auditoria-retail",
+    "storage_bucket": "auditoria-retail.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:889698122242:android:f52d3706336191a73e051b",
+        "android_client_info": {
+          "package_name": "com.example.auditoriaretail"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "889698122242-ff9mm8nrmv2qi5qt7jlkesqinpsink2a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwX9ofShzuDZRWRwm4h4eKK3sgBpsDFvU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "889698122242-ff9mm8nrmv2qi5qt7jlkesqinpsink2a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
