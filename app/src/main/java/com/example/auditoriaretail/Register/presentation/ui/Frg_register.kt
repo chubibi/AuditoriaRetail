@@ -25,9 +25,10 @@ class Frg_register : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.imgback.setOnClickListener {
-            findNavController().navigate(R.id.to_frgMainLogin)
-        }
+       binding.btnGuardar.setOnClickListener {
+           findNavController().navigate(R.id.to_frgMainLogin)
+
+       }
     }
 
 }
