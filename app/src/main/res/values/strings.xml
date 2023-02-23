@@ -7,6 +7,8 @@
     <string name="login">Iniciar Sesión</string>
     <string name="sign_up">Registrarme</string>
     <string name="yelsan">YELSAN</string>
+    <string name="nombre_completo">Nombre Completo</string>
+    <string name="save">Guardar Datos</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

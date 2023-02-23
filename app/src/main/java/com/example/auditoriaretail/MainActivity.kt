@@ -3,7 +3,7 @@ package com.example.auditoriaretail
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.example.auditoriaretail.Login.presentation.ui.MainLogin
+import com.example.auditoriaretail.Login.presentation.ui.NavLoginHost
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         supportActionBar?.hide()
         CoroutineScope(Dispatchers.Main).launch {
             delay(2500L)
-            startActivity(Intent(this@MainActivity, MainLogin::class.java))
+            startActivity(Intent(this@MainActivity, NavLoginHost::class.java))
             finish()
         }
     }
