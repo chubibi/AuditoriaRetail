@@ -10,24 +10,10 @@
         android:label="frg_main_login"
         tools:layout="@layout/frg_main_login" >
         <action
-            android:id="@+id/to_frg_register"
-            app:destination="@id/frg_register" />
-        <action
             android:id="@+id/to_frgDashboard"
             app:destination="@id/frgDashboard" />
     </fragment>
 
-    <fragment
-        android:id="@+id/frg_register"
-        android:name="com.example.auditoriaretail.Register.presentation.ui.Frg_register"
-        android:label="frg_register"
-        tools:layout="@layout/frg_register" >
-        <action
-            android:id="@+id/to_frgMainLogin"
-            app:popUpTo="@id/frgMainLogin"
-            app:popUpToInclusive="true"
-            app:destination="@id/frgMainLogin" />
-    </fragment>
     <fragment
         android:id="@+id/frgDashboard"
         android:name="com.example.auditoriaretail.Dashboard.presentation.ui.FrgDashboard"
