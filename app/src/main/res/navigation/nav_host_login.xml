@@ -18,5 +18,18 @@
         android:id="@+id/frgDashboard"
         android:name="com.example.auditoriaretail.Dashboard.presentation.ui.FrgDashboard"
         android:label="frg_dashboard"
-        tools:layout="@layout/frg_dashboard" />
+        tools:layout="@layout/frg_dashboard" >
+        <action
+            android:id="@+id/to_userlistActivity"
+            app:destination="@id/userlistActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentBuscador"
+        android:name="com.example.auditoriaretail.Dashboard.presentation.ui.FragmentBuscador"
+        android:label="FragmentBuscador" />
+    <activity
+        android:id="@+id/userlistActivity"
+        android:name="com.example.auditoriaretail.UserlistActivity"
+        android:label="activity_userlist"
+        tools:layout="@layout/activity_userlist" />
 </navigation>

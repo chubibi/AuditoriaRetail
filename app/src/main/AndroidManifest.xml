@@ -2,6 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+
     <application
         android:name=".di.AppApplicationDaggerHilt"
         android:allowBackup="true"
@@ -12,6 +17,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AuditoriaRetail"
         tools:targetApi="31">
+
+        <activity
+            android:name=".UserlistActivity"
+            android:exported="true" >
+
+
+        </activity>
+
         <activity
             android:name=".Login.presentation.ui.NavLoginHost"
             android:exported="false" />

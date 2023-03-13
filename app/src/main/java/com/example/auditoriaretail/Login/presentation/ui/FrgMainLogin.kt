@@ -100,6 +100,7 @@ class FrgMainLogin : Fragment() {
                             customAlert.dismiss()
                         }*/
                         Log.d("STATE","Error")
+                        Toast.makeText(requireContext(), "ERROR JONA", Toast.LENGTH_SHORT).show()
                     }
                     else -> {}
                 }
@@ -116,7 +117,7 @@ class FrgMainLogin : Fragment() {
 
             override fun onAuthenticationSucceeded(result: BiometricPrompt.AuthenticationResult) {
                 super.onAuthenticationSucceeded(result)
-                Toast.makeText(requireContext(), "Bienvenido", Toast.LENGTH_SHORT).show()
+
             }
 
             override fun onAuthenticationFailed() {
